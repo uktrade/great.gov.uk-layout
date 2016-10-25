@@ -1,0 +1,83 @@
+body {
+	background-color:$stone-40;
+	background-image: url(../img/great-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 16px;
+	color: $dark-grey;
+}
+
+.great-brand {
+	text-align: center;
+
+	img {
+		border: 20px solid $white;
+
+		margin-bottom: -20px;
+	}
+}
+
+.great-hero {
+	background-color: $great-blue;
+	background-color: rgba(30, 19, 72, 0.8);
+	color: $white;
+	padding: 40px 0 80px 0;
+
+	.lead {
+		border-bottom: 1px solid $white;
+		padding: 40px 0;
+	}
+}
+
+.great-tiles-wrapper {
+	margin-top:-40px;
+}
+
+.great-tile {
+
+
+
+	background-color: $white;
+	margin: 0 0 30px 0;
+	padding: 15px;
+	float: left;
+	width: 100%;
+
+	&--half {
+		margin-right: 4%;
+		width: 48%
+	}
+
+	&--third {
+		margin-right: 4%;
+		width: 30.66666667%
+	}
+
+	&-omega {
+		margin-right: 0 !important;
+	}
+
+	&--sub-tile{
+		background-color: $stone-40;
+		border: 1px solid $stone;
+		margin-right: 1%;
+		width: 32.66666667%
+	}
+
+	h1 {
+		font-size: 20px;
+		margin-top: 0;
+	}
+
+	@media (max-width: $screen-xs-max) {
+      width: 100% !important;
+      margin-right: 0;
+    }
+
+}
+
+.great-locale-selctor {
+	margin-top: 40px;
+	background-color: $stone-40;
+	color: $dark-grey;
+}
