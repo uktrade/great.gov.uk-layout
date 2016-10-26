@@ -78,9 +78,9 @@ body {
 	}
 
 	@media (max-width: $screen-xs-max) {
-      width: 100% !important;
-      margin-right: 0;
-    }
+		width: 100% !important;
+		margin-right: 0;
+	}
 
     .great-btn {
 		position: absolute;
@@ -93,6 +93,71 @@ body {
 	margin-top: 40px;
 	background-color: $stone-40;
 	color: $dark-grey;
+
+	&__help-ext {
+		display: block;
+		font-weight: normal;
+		font-size: 14px;
+	}
+
+	ul {
+		list-style: none;
+		padding: 15px 0 0 0;
+		margin: 0;
+		overflow: hidden;
+	}
+
+	li {
+		padding: 15px;;
+		margin: 0 3.5% 3.5% 0;
+		width: 31%;
+		display: block;
+		float: left;
+		// height: 150px;
+		// border: 1px solid red;
+
+		&:nth-child(3n+0) {
+			margin-right: 0;
+		}
+
+		@media (max-width: $screen-sm-max) {
+			width: 48.25%;
+			margin-right: 3.5%;
+
+			&:nth-child(3n+0) {
+				margin-right: 3.5%;
+			}
+
+			&:nth-child(2n+0) {
+				margin-right: 0;
+			}
+		}
+
+		@media (max-width: $screen-xs-max) {
+			width: 100%;
+			margin-right: 0;
+
+			a {
+				min-height: auto;
+			}
+		}
+
+		a {
+			// padding: 15px;
+			// display: block;
+			text-decoration: none;
+			// height: 100%;
+			font-weight: bold;
+			// color: $dark-grey;
+
+			&:hover {
+				// background-color: $stone;
+				text-decoration: none;
+			}
+		}
+
+
+	}
 }
 
 .section {
@@ -159,6 +224,16 @@ body {
 			padding-bottom: 90px;
 		}
 	}
+}
+
+.great-flag-circle {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: $link-blue;
+	display: block;
+	float: left;
+	margin: -7px 10px 0 -15px;
 }
 
 
