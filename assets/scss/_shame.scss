@@ -24,6 +24,11 @@ body {
 	color: $white;
 	padding: 40px 0 80px 0;
 
+	h1 {
+		font-size: 64px;
+		font-weight: 700;
+	}
+
 	.lead {
 		border-bottom: 1px solid $white;
 		padding: 40px 0;
@@ -40,7 +45,7 @@ body {
 
 
 	background-color: $white;
-	margin: 15px 0 0 0;
+	margin: 0 0 30px 0;
 	padding: 15px;
 	float: left;
 	width: 100%;
@@ -48,12 +53,12 @@ body {
 
 	&--half {
 		margin-right: 4%;
-		width: 48%
+		width: 48%;
 	}
 
 	&--third {
 		margin-right: 4%;
-		width: 30.66666667%
+		width: 30.66666667%;
 	}
 
 	&-omega {
@@ -63,8 +68,9 @@ body {
 	&--sub-tile{
 		background-color: $stone-40;
 		border: 1px solid $stone;
-		margin-right: 1%;
-		width: 32.66666667%
+		// margin-right: 1%;
+		width: 32.66666667%;
+		margin: 15px 1% 0 0;
 	}
 
 	h1, h2, h3 {
