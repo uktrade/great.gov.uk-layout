@@ -31,7 +31,8 @@ body {
 }
 
 .great-tiles-wrapper {
-	margin-top:-40px;
+	position: relative;
+	top: -50px;
 }
 
 .great-tile {
@@ -82,3 +83,22 @@ body {
 	background-color: $stone-40;
 	color: $dark-grey;
 }
+
+.section {
+	width: 100%;
+	background-color: $white;
+
+	&--stone-40 {
+		background-color: $stone-40;
+	}
+}
+
+.great-cta-block {
+	background-color: $great-blue;
+	background-color: rgba(30, 19, 72, 0.7);
+	color: $white;
+	padding: 40px inherit;
+}
+
+
+
