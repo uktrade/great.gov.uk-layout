@@ -20,7 +20,7 @@ body {
 
 .great-hero {
 	background-color: $great-blue;
-	background-color: rgba(30, 19, 72, 0.7);
+	background-color: rgba(30, 19, 72, 0.8);
 	color: $white;
 	padding: 40px 0 80px 0;
 
@@ -66,8 +66,7 @@ body {
 		width: 32.66666667%
 	}
 
-	h1 {
-		font-size: 20px;
+	h1, h2, h3 {
 		margin-top: 0;
 	}
 
@@ -91,13 +90,22 @@ body {
 	&--stone-40 {
 		background-color: $stone-40;
 	}
+
+	&--great-cta {
+		background-color: transparent;
+		padding: 150px 0;
+	}
 }
 
 .great-cta-block {
 	background-color: $great-blue;
-	background-color: rgba(30, 19, 72, 0.7);
+	background-color: rgba(30, 19, 72, 0.8);
 	color: $white;
-	padding: 40px inherit;
+	padding: 30px 15px;
+
+	h1, h2, h3 {
+		margin: 0;
+	}
 }
 
 
