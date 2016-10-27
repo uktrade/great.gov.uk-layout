@@ -34,7 +34,7 @@
                     <h1>Your UK opportunity</h1>
                     <p class="lead">The UK. Home to cutting edge innovators, a place that nurtures talent. <br> Your future belongs here.</p>
                     <h2> I am based in <span class="great-current-locale">United States</span></h2>
-                    <a href="#">Change country or region</a>
+                    <a href="#" class="great-locale-selctor__toggle">Change country or region</a>
                 </div>
             </div>
             <!-- /.row -->
@@ -121,8 +121,23 @@
     </div>
 
     <script src="/assets/js/equalHeight.js"></script>
+    <script src="/assets/js/easing.js"></script>
     <script type="text/javascript">
         equalheight(".great-equal-hights-container");
+
+        $('.great-locale-selctor__toggle').click(function(event) {
+            event.preventDefault();
+            slideToggle('.great-locale-selctor');
+        });
+
+        // great-locale-selctor
+
+        function slideToggle(item) {
+            // $(item).slideToggle("easeInOutSine");
+            $(item).slideToggle('2000', 'easeInOutSine', function () {
+                // Animation complete.
+            });
+        };
     </script>
 
 </body>
