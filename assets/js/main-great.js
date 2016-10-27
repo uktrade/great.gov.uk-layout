@@ -1,6 +1,7 @@
-equalheight(".great-equal-hights-container");
+equalheight('.great-equal-hights-container');
 setupLocaleSelector();
 blurLinks();
+resizeListner();
 removeloading();
 
 
@@ -45,3 +46,9 @@ function scrollingBG() {
     $(window).bind('scroll', update);
     
 };
+
+function resizeListner() {
+    $(window).resize(function() {
+        equalheight('.great-equal-hights-container');
+    });
+}

@@ -16,6 +16,12 @@ a {
 	}
 }
 
+.container {
+	@media (max-width: $screen-xs-max) {
+		margin: 0 15px;
+	}
+}
+
 .great-brand {
 	text-align: center;
 
