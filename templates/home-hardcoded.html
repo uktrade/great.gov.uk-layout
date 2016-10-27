@@ -18,6 +18,7 @@
     <script src="/assets/js/jquery.min.js"></script>
     <script src="/assets/js/bootstrap.min.js"></script>
 
+
 </head>
 
 <body>
@@ -47,12 +48,12 @@
                     <div class="col-sm-12">
                     <h3>Choose your country or region</h3>
                          <ul class="great-equal-hights-container">
-                            <li><a href="#"><span class="great-flag-circle"></span>United Kingdom</a></li>
-                            <li><a href="#"><span class="great-flag-circle"></span>中国</a></li>
-                            <li><a href="#"><span class="great-flag-circle"></span>Untied States</a></li>
-                            <li><a href="#"><span class="great-flag-circle"></span>Deutschland</a></li>
-                            <li><a href="#"><span class="great-flag-circle"></span>India</a></li>
-                            <li><a href="#"><span class="great-flag-circle"></span>Im in another country or region <span class="great-locale-selctor__help-ext">view in international (English)</span></a></li>
+                            <li><a href="#"><span class="great-flag-circle great-flag-circle--uk"></span>United Kingdom</a></li>
+                            <li><a href="#"><span class="great-flag-circle great-flag-circle--cn"></span>中国</a></li>
+                            <li><a href="#"><span class="great-flag-circle great-flag-circle--us"></span>Untied States</a></li>
+                            <li><a href="#"><span class="great-flag-circle great-flag-circle--de"></span>Deutschland</a></li>
+                            <li><a href="#"><span class="great-flag-circle great-flag-circle--in"></span>India</a></li>
+                            <li><a href="#" class="util-mar--0">Im in another country or region <span class="great-locale-selctor__help-ext">view in international (English)</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -131,7 +132,11 @@
             slideToggle('.great-locale-selctor');
         });
 
-        // great-locale-selctor
+        $('a').click(function(event) {
+            $(this).blur();
+        });
+
+         $('.great-locale-selctor').hide();
 
         function slideToggle(item) {
             // $(item).slideToggle("easeInOutSine");
