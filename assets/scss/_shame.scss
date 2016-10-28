@@ -111,6 +111,16 @@ a {
 
 }
 
+.great-current-locale {
+	position: relative;
+    margin: 0 0 20px 60px;
+    display: inline-block;
+
+    .great-flag-circle {
+    	top: -10px;
+    }
+}
+
 .great-locale-selctor {
 	margin-top: 40px;
 	background-color: $stone-40;
@@ -317,6 +327,10 @@ a.great-btn, .great-btn {
 		&--0 {
 			margin: 0 !important;
 		}
+	}
+
+	&-font-size--body {
+		font-size: 16px;
 	}
 }
 
