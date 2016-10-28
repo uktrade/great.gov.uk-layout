@@ -50,8 +50,14 @@
                 <div class="col-sm-10 col-sm-offset-1 text-center">
                     <h1>The demand is out there. <br>You should be too.</h1>
                     <p class="lead">The UK. Home to cutting edge innovators, a place that nurtures talent and creates exceptional products and services. This is your opportunity to change the world.</p>
-                    <h2 class="util-font-size--body"> I am based in <span class="great-current-locale"><span class="great-flag-circle great-flag-circle--uk"></span>United Kingdom</span></h2>
+                    {% if labels.country_code %}
+                    {% if labels.country_code === 'int'%}
+                    <h2 class="util-font-size--body">International (English) selected</h2>
+                    {% else %}
+                    <h2 class="util-font-size--body">I am based in <span class="great-current-locale"><span class="great-flag-circle great-flag-circle--{{labels.country_code}}"></span>{{labels.country}}</span></h2>
+                    {% endif %}
                     <a href="#" class="great-locale-selctor__toggle">Change country</a>
+                    {% endif %}
                 </div>
             </div>
             <!-- /.row -->
