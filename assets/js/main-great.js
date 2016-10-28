@@ -1,9 +1,14 @@
-equalheight('.great-equal-hights-container');
+doEqualHeights('.great-equal-hights-container');
 setupLocaleSelector();
 blurLinks();
 resizeListner();
 removeloading();
 
+
+function doEqualHeights(input) {
+    equalheight(input);
+    // $('.great-tile .great-btn').css('position', 'absolute');
+}
 
 function blurLinks() {
     $('a').click(function(event) {
@@ -49,6 +54,6 @@ function scrollingBG() {
 
 function resizeListner() {
     $(window).resize(function() {
-        equalheight('.great-equal-hights-container');
+        doEqualHeights('.great-equal-hights-container');
     });
 }
