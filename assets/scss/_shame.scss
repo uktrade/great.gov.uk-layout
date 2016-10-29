@@ -51,9 +51,12 @@ a {
 		 }
 	}
 
-	.lead {
-		border-bottom: 1px solid $white;
-		padding: 40px 0;
+	p {
+		font-size: 21px;
+		// border-bottom: 1px solid $white;
+		font-weight: 300;
+		line-height: 1.4;
+		padding: 20px 0 0 0;
 	}
 }
 
@@ -197,8 +200,6 @@ a {
 				border-bottom: 1px solid;
 			}
 		}
-
-
 	}
 }
 

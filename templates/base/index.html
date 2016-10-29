@@ -47,9 +47,14 @@
         <div class="container">
 
             <div class="row">
-                <div class="col-sm-10 col-sm-offset-1 text-center">
+                <div class="col-sm-12 text-center">
                     <h1>{{contentBlocks.pageHeader.content.title}}</h1>
-                    <p class="lead">{{contentBlocks.pageHeader.content.contents | safe}}</p>
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 text-center">
+                    {{contentBlocks.pageHeader.content.contents | safe}}
+                </div>
+                <div class="col-sm-12 text-center"><hr></div>
+                <div class="col-sm-12 text-center">
                     {% if locale.country %}
                     {% if locale.country === 'int'%}
                     <h2 class="util-font-size--body">International (English) selected</h2>
