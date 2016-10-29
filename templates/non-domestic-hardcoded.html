@@ -7,7 +7,9 @@
                 <div class="col-sm-3 great-tile great-tile--quarter {% if loop.last %} great-tile-omega {% endif %}  util-padd-bottom--btn">
                     <h2>{{l.content.title}}</h2>
                     <p>{{l.content.contents | safe}}</p>
+                    {% if l.link_label %}
                     <a href="#" class="great-btn">{{labels[l.link_label]}}</a>
+                    {% endif %}
                 </div>
               {% endfor %}
             </div>

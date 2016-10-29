@@ -48,8 +48,8 @@
 
             <div class="row">
                 <div class="col-sm-10 col-sm-offset-1 text-center">
-                    <h1>The demand is out there. <br>You should be too.</h1>
-                    <p class="lead">The UK. Home to cutting edge innovators, a place that nurtures talent and creates exceptional products and services. This is your opportunity to change the world.</p>
+                    <h1>{{contentBlocks.pageHeader.content.title}}</h1>
+                    <p class="lead">{{contentBlocks.pageHeader.content.contents | safe}}</p>
                     {% if labels.country_code %}
                     {% if labels.country_code === 'int'%}
                     <h2 class="util-font-size--body">International (English) selected</h2>
@@ -93,10 +93,10 @@
                 <div class="col-sm-12 great-cta-block">
                     <div class="row">
                         <div class="col-sm-8">
-                            <h2>The UK supports international trade and investment, and welcomes travellers and students from across the world.</h2>
+                            <h2>{{contentBlocks.pageFooter.content.contents | safe }}</h2>
                         </div>
                         <div class="col-sm-4">
-                            <a href="/int" class="great-btn great-btn--white">Experience the UK</a>
+                            <a href="/int" class="great-btn great-btn--white">{{labels[contentBlocks.pageFooter.link_label]}}</a>
                         </div>
                     </div>
                 </div>
