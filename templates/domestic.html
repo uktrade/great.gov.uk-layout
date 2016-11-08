@@ -11,7 +11,7 @@
                         <li class="great-tile great-tile--sub-tile util-padd-bottom--btn {% if loop.last %} great-tile-omega {% endif %}">
                             <h3>{{l.content.title}}</h3>
                             {{l.content.contents | safe}}
-                            <a href="#" class="great-btn">{{labels[l.link_label]}}</a>
+                            <a href="{{labels[l.link_target]}}" class="great-btn">{{labels[l.link_label]}}</a>
                         </li>
                         {% endfor %}
                     </ul>
