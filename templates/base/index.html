@@ -55,7 +55,7 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <div class="great-brand">
-        <img src="../assets/img/great-logo.png" alt="">
+        <img src="/assets/img/great-logo.png" alt="">
     </div>
     <div class="great-hero">
         <div class="container">
@@ -106,24 +106,7 @@
 {% block content %}
 {% endblock %}
 
-    <div class="section section--great-cta">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 great-cta-block">
-                    <div class="row">
-                        <div class="col-sm-8">
-                            <h2>{{contentBlocks.pageFooter.content.contents | safe }}</h2>
-                        </div>
-                        <div class="col-sm-4 text-right">
-                            <a href="{{contentBlocks.pageFooter.link_target}}" class="great-btn great-btn--white">{{labels[contentBlocks.pageFooter.link_label]}}</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-        </div>
-
-    </div>
 
     <div class="great-footer">
         <div class="container">
@@ -134,7 +117,7 @@
                 <div class="col-xs-12">
                     <ul class="list-unstyled">
                         <li class="pull-left">&copy; Crown copyright 2016</li>
-                        <li class="pull-right"><a href="#">{{labels.privacy_policy}}</a></li>
+                        <li class="pull-right"><a href="privacy-policy">{{labels.privacy_policy}}</a></li>
                     </ul>
                 </div>
             </div>
