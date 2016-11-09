@@ -57,51 +57,6 @@
     <div class="great-brand">
         <img src="/assets/img/great-logo.png" alt="">
     </div>
-    <div class="great-hero">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <h1>{{contentBlocks.pageHeader.content.title}}</h1>
-                </div>
-                <div class="col-sm-10 col-sm-offset-1 text-center">
-                    {{contentBlocks.pageHeader.content.contents | safe}}
-                </div>
-                <div class="col-sm-12 text-center"><hr></div>
-                <div class="col-sm-12 text-center">
-                    {% if locale.country %}
-                    {% if locale.country === 'int'%}
-                    <h2 class="util-font-size--body">International (English) selected</h2>
-                    {% else %}
-                    <h2 class="util-font-size--body">{{labels.I_am_based_in}} <span class="great-current-locale"><span class="great-flag-circle great-flag-circle--{{locale.country}}"></span>{% if locale.country === 'uk'%}United Kingdom{% elseif locale.country === 'us' %}United States{% elseif locale.country === 'cn' %}中国{% elseif locale.country === 'in' %}India{% elseif locale.country === 'de' %}Deutschland{% endif %}</span></h2>
-                    {% endif %}
-                    <a href="#" class="great-locale-selctor__toggle">{{labels.change_country}}</a>
-                    {% endif %}
-                </div>
-            </div>
-            <!-- /.row -->
-
-        </div>
-        <!-- /.container -->
-        <div class="great-locale-selctor">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                    <h3>Choose your country</h3>
-                         <ul class="great-equal-hights-container">
-                            <li><a href="/uk"><span class="great-flag-circle great-flag-circle--uk"></span>United Kingdom</a></li>
-                            <li><a href="/us"><span class="great-flag-circle great-flag-circle--us"></span>United States</a></li>
-                            <li><a href="/cn"><span class="great-flag-circle great-flag-circle--cn"></span>中国</a></li>
-                            <li><a href="/in"><span class="great-flag-circle great-flag-circle--in"></span>India</a></li>
-                            <li><a href="/de"><span class="great-flag-circle great-flag-circle--de"></span>Deutschland</a></li>
-                            <li><a href="/int" class="util-mar--0">I'm in another country <span class="great-locale-selctor__help-ext">view in international (English)</span></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
 
 {% block content %}
 {% endblock %}
