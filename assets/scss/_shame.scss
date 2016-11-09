@@ -340,6 +340,21 @@ a.great-btn, .great-btn {
 	}
 }
 
+.breadcrumb--great {
+	background-color: transparent;
+	border-radius: 0;
+	border-bottom: 1px solid $link-blue;
+}
+
+.image-link {
+	display:inline-block;
+	&:hover, &:focus, &:active {
+		// text-decoration: none;
+		border-bottom: 0px solid transparent !important;
+		padding-bottom: 0px !important;
+	}
+}
+
 
 
 

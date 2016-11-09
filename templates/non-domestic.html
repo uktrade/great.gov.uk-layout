@@ -9,7 +9,7 @@
                     <h2>{{l.content.title}}</h2>
                     {{l.content.contents | safe}}
                     {% if l.link_label %}
-                    <a href="#" class="great-btn">{{labels[l.link_label]}}</a>
+                    <a href="{{l.link_target}}" class="great-btn">{{labels[l.link_label]}}</a>
                     {% endif %}
                 </div>
               {% endfor %}
