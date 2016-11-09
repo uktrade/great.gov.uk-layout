@@ -1,0 +1,15 @@
+{% extends "base/index.html" %}
+    {% block content %}
+    <div class="section section--stone-40">
+        <div class="container great-tiles-wrapper">
+            <div class="row">
+                <div class="col-sm-12 great-tile">
+                    {% for l in contentBlocks.contentList %}
+                    <h2>{{l.content.title}}</h2>
+                    {{l.content.contents | safe}}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
