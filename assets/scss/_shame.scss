@@ -391,7 +391,9 @@ a.great-btn, .great-btn {
 }
 
 .dit-beta-block {
-	margin-top: 7px;
+	margin-top: 11px;
+	font-weight: 100;
+    font-size: 14px;
 
 	a {
 		color: $white;
@@ -401,13 +403,13 @@ a.great-btn, .great-btn {
 
 	&__icon {
 		margin-right: 10px;
+		margin-top: -2px;
 		padding: 4px 10px;
 		font-size: 12px;
-		height: 26px;
+		height: 23px;
 		background-color: #fd7521;
 		color: $white;
 		float: left;
-		text-decoration: uppercase;
 	}
 
 }
