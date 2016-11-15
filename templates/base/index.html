@@ -71,26 +71,11 @@
 
 
 
-    <div class="great-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <a href="https://www.gov.uk" class="image-link"><img src="/assets/img/hmg-stacked.png" class="great-hmg-logo" alt="HM Government"></a>
-                </div>
-                <div class="col-xs-12">
-                    <ul class="list-unstyled">
-                        <li class="pull-left">&copy; Crown copyright 2016</li>
-                        <li class="pull-right"><a href="terms-and-conditions">{{labels.terms_and_conditions}}</a></li>
-                        <li class="pull-right"><a href="privacy-policy">{{labels.privacy_policy}}</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+{% block footer %}
+{% include "partials/footer.html" %}
+{% include "partials/scripts.html" %}
+{% endblock %}
 
-    <script src="/assets/js/equalHeight.js"></script>
-    <script src="/assets/js/easing.js"></script>
-    <script src="/assets/js/main-great.js"></script>
 
 </body>
 

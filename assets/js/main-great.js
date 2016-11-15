@@ -22,7 +22,7 @@ function setupLocaleSelector() {
         slideToggle('.great-locale-selctor');
     });
 
-    $('.great-locale-selctor').hide();
+    $('.great-locale-selector').hide();
 }
 
 function removeloading() {
