@@ -17,9 +17,9 @@ function blurLinks() {
 }
 
 function setupLocaleSelector() {
-    $('.great-locale-selctor__toggle').click(function(event) {
+    $('.great-locale-selector__toggle').click(function(event) {
         event.preventDefault();
-        slideToggle('.great-locale-selctor');
+        slideToggle('.great-locale-selector');
     });
 
     $('.great-locale-selector').hide();
