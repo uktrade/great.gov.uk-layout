@@ -338,13 +338,11 @@ a.great-btn, .great-btn {
   &--logo {
     > a {
       display: block;
-      margin-top: 35px;
+      height: 27px;
+      width: auto;
+      //margin-top: 35px;
+      margin-bottom: 10px;
     }
-  }
-
-  .dit-logo-footer {
-    height: 27px;
-    margin-top: -2px;
   }
 
   @media (max-width: $screen-xs-max) {
@@ -352,10 +350,8 @@ a.great-btn, .great-btn {
   }
 }
 
-.great-hmg-logo {
-  height: 60px;
-  width: auto;
-  margin-bottom: 30px;
+.list-unstyled {
+  font-size: 10px;
 }
 
 .util {
